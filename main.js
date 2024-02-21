@@ -12,7 +12,7 @@ const playTune = (key) => {
     clickedKey.classList.add("active");
     setTimeout(() => { 
         clickedKey.classList.remove("active");
-    }, 150);
+    }, 1000);
 }
 
 pianoKeys.forEach(key => {
@@ -21,6 +21,7 @@ pianoKeys.forEach(key => {
 });
 
 const handleVolume = (e) => {
+
     audio.volume = e.target.value; 
 }
 const showHideKeys = () => {
@@ -28,6 +29,7 @@ const showHideKeys = () => {
 }
 
 const pressedKey = (e) => {
+    if (e.repeat) return;
     if(allKeys.includes(e.key)) playTune(e.key);
 }
 
