@@ -5,18 +5,19 @@
     <title>PINAO</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/piano (1).png">
     <script src="main.js" defer></script>
   </head>
   <body>
+    <div class="column volume-slider">
+      <span class="volume-slidername">Volume:</span><input type="range" min="0" max="1" value="0.5" step="any">
+    </div>
+    <div class="column keys-checkbox">
+      <span class="keys-checkboxname">Show Keys</span><input type="checkbox" checked>
+    </div>
     <div class="wrapper">
       <header>
-        <h2>Playable PIANO</h2>
-        <div class="column volume-slider">
-          <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any">
-        </div>
-        <div class="column keys-checkbox">
-          <span>Show Keys</span><input type="checkbox" checked>
-        </div>
+        <h2>PIANO KIT</h2>
       </header>
       <ul class="piano-keys">
         <li class="key white" data-key="a"><span>a</span></li>
