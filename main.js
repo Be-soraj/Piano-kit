@@ -12,7 +12,7 @@ const playTune = (key) => {
     clickedKey.classList.add("active");
     setTimeout(() => { 
         clickedKey.classList.remove("active");
-    }, 1000);
+    }, 150);
 }
 
 pianoKeys.forEach(key => {
